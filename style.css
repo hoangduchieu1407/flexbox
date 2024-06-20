@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 10px;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    margin-left: calc(-1 * var(--spacing));
+    --spacing: 30px;
+    --columns: 5;
+}
+
+.card{
+    width: calc(calc(100% / var(--columns)) - var(--spacing));
+    margin-left: var(--spacing);
+    margin-bottom: var(--spacing);
+    border: 0.5px solid seashell;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card:hover{
+    box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.6);
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border-radius: 15px 15px 0 0;
+}
+.card-title{
+    padding: 0 15px;
+     /*Định đoạn TEXT chỉ có 3 dòng*/
+     word-break:break-all;  
+     display: -webkit-box;
+     -webkit-line-clamp: 3;
+     -webkit-box-orient: vertical;
+     overflow: hidden;
+     text-overflow: ellipsis;
+}
+.card-user{
+    display: flex;
+    margin-top: auto;
+    flex-shrink: 0;
+    padding: 15px 15px;
+
+}
+
+.card-user-avatar{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.bxs-check-circle{
+    color: blue;
+}
+
+.card-user-top{
+    display: flex;
+}
+
+.card-bottom{
+    margin-top: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px 15px 15px;
+    flex-shrink: 0;
+}
+
+.card-live{
+    background-color: crimson;
+    color: white;
+    padding: 3px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-content{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-top{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}

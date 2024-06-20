@@ -1,0 +1,58 @@
+
+:root{
+    --primary-color: #ed2568;
+}
+body{
+    background-color: antiquewhite;
+}
+.container{
+    background-color: white;
+    border-top: 5px solid var(--primary-color);
+    width: 500px;
+    height: 150px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 0px 0px var(--primary-color);
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.connecter{
+    width: 150px;
+    height: 70px;
+    background-color: var(--primary-color);
+    display: flex;
+    border-radius: 25px;
+    margin-left: -80px;
+    justify-content: center;
+}
+
+.connecter .bx-wifi{
+    align-content: center;
+    margin-right: 5px;
+    color: white;
+}
+h3{
+    align-self: center;
+    color: white;
+}
+
+.connectclose{
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 5px;
+    font-size: 2em;
+    color: var(--primary-color);
+}
+
+h2{
+    color: var(--primary-color);
+    height: 7px;
+}
+
+p{
+    color:darkgray;
+    margin-top: 5px;
+    height: 7px;
+}
